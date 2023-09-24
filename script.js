@@ -25,15 +25,16 @@ function addTask() {
 
         // Skapa ett nytt <li>-element för att representera uppgiften
         const listItem = document.createElement("li");
-        listItem.innerText = task.text;
+        const listItemText = document.createElement("p");
+        listItemText.innerText = task.text;
 
         // Lägg till en klickhändelse på uppgiften för att markera den som klar eller omvänt
         listItem.addEventListener("click", () => {
             task.completed = !task.completed; // Växla uppgiftens klar-status
             if (task.completed) {
-                listItem.classList.add("completed"); // Lägg till klassen om uppgiften är klar
+                listItemText.classList.add("completed"); // Lägg till klassen om uppgiften är klar
             } else {
-                listItem.classList.remove("completed"); // Ta bort klassen om uppgiften inte är klar
+                listItemText.classList.remove("completed"); // Ta bort klassen om uppgiften inte är klar
             }
             updateCompletedCount(); // Uppdatera räkningen av klara uppgifter
         });
@@ -54,6 +55,7 @@ function addTask() {
         });
 
         // Lägg till raderingsknappen i uppgiften och sedan uppgiften i listan
+        listItem.appendChild(listItemText);
         listItem.appendChild(deleteButton);
         taskList.appendChild(listItem);
 

@@ -43,11 +43,19 @@ li {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #000;
+    cursor: pointer;
+}
+
+li p {
+    margin: 0;
+    padding: 0;
 }
 
 .completed {
     text-decoration: line-through;
-    color: #888;
+    color: green;
 }
 
 .delete-button {
