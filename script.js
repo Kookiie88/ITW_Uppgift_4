@@ -2,10 +2,10 @@
 const tasks = [];
 
 // Hämta referenser till DOM-elementen
-const taskInput = document.getElementById("taskInput"); // Input-fältet där användaren skriver uppgifter
-const addTaskButton = document.getElementById("addTaskButton"); // Knappen för att lägga till uppgifter
-const taskList = document.getElementById("taskList"); // Listan där uppgifterna visas
-const completedTasks = document.getElementById("completedTasks"); // Antalet klara uppgifter
+const taskInput = document.querySelector("#taskInput"); // Input-fältet där användaren skriver uppgifter
+const addTaskButton = document.querySelector("#addTaskButton"); // Knappen för att lägga till uppgifter
+const taskList = document.querySelector("#taskList"); // Listan där uppgifterna visas
+const completedTasks = document.querySelector("#completedTasks"); // Antalet klara uppgifter
 
 // Lägg till en klickhändelse på knappen för att lägga till uppgifter
 addTaskButton.addEventListener("click", addTask);
