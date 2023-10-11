@@ -1,18 +1,18 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom right, #00ffcc 0%, #ff99cc 93%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
 }
 
 .container {
+    flex-direction: row;
     max-width: 400px;
-    margin-top: 50px; 
-    margin-right: auto;
-    margin-bottom: auto;
-    margin-left: auto;
     background-color: #fff;
-    padding: 20px;
+    padding: 40px;
     border-radius: 5px;
 }
 
@@ -21,7 +21,7 @@ h1 {
 }
 
 input[type="text"] {
-    width: 70%;
+    width: 65%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
