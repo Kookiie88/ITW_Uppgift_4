@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Raleway', sans-serif;
     background: linear-gradient(to bottom right, #00ffcc 0%, #ff99cc 93%);
     display: flex;
     justify-content: center;
@@ -11,9 +11,10 @@ body {
 .container {
     flex-direction: row;
     max-width: 400px;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 40px;
     border-radius: 5px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
 }
 
 h1 {
@@ -25,6 +26,7 @@ input[type="text"] {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    font-family: 'Raleway', sans-serif;
 }
 
 button {
